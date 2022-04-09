@@ -1,12 +1,12 @@
 import React from 'react';
-import { ReturnHome } from '../../components/ReturnHome';
-
+import { ReturnHome } from '../../components/ReturnHome/ReturnHome';
+import './GifsApp.scss';
 
 const GifsApp = () => {
   return (
     <>
       <h1>GifsApp</h1>
-      <button className='home__button'><ReturnHome /></button>
+      <ReturnHome />
     </>
   )
 }

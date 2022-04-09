@@ -1,56 +1,60 @@
 /* From cssbuttons.io by @nikk7007 */
-button {
+.main_button {
   border-radius: 10px;
   padding: 0.8em 1.8em;
-  border: 2px solid #3c77f1;
+  border: 2px solid #5B42F3;
   position: relative;
   overflow: hidden;
   background-color: transparent;
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
-  transition: .3s;
+  transition: 0.3s;
   z-index: 1;
   font-family: inherit;
-  color: #3c77f1;
+  color: #5B42F3;
   cursor: pointer;
- }
- 
- button::before {
-  content: '';
-  width: 0;
-  height: 300%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  background: #3c77f1;
-  transition: .5s ease;
-  display: block;
-  z-index: -1;
- }
- 
- button:hover::before {
-  width: 105%;
- }
- 
- button:hover {
-  color: #fff;
- }
- 
- /* From cssbuttons.io by @adamgiebl */
+
+  &::before {
+    content: "";
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #5B42F3;
+    transition: 0.5s ease;
+    display: block;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    width: 105%;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+/* From cssbuttons.io by @adamgiebl */
 .home__button {
+  position: absolute;
+  right: 300px;
+  top: 80px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
   background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
   background-size: 800% 400%;
   padding: 1em 2em;
   display: inline-block;
   border: none;
-  border-radius: 10px;
-  font-size: 17px;
-  font-weight: 700;
-  color: white;
-  transition: all .5s ease-in-out;
-  animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
 
   &:hover {
     animation: gradient 3s infinite;
@@ -61,19 +65,25 @@ button {
     animation: gradient 3s infinite;
     transform: scale(0.8);
   }
- }
- 
- 
- @keyframes gradient {
+
+  i {
+    font-size: 50px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+}
+
+@keyframes gradient {
   0% {
-   background-position: 0% 50%;
+    background-position: 0% 50%;
   }
- 
+
   50% {
-   background-position: 100% 50%;
+    background-position: 100% 50%;
   }
- 
+
   100% {
-   background-position: 0% 50%;
+    background-position: 0% 50%;
   }
- }
+}

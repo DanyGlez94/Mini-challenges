@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { ReturnHome } from "../../components/ReturnHome/ReturnHome";
+import './TodoApp.scss';
 
 const TodoApp = () => {
   return (
-    <div>TodoApp</div>
-  )
-}
+    <>
+      <h1>TodoApp</h1>
+      <ReturnHome />
+    </>
+  );
+};
 
-export { TodoApp }
+export { TodoApp };
