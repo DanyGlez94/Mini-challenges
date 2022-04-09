@@ -1,9 +1,12 @@
-import react from "react";
+import { Home } from "./pages/Home/Home";
+import './App.scss';
 
 function App() {
 
   return (
-    <h1>Hola</h1>
+    <>
+      <Home />
+    </>
   )
 }
 
